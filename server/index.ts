@@ -35,8 +35,8 @@ const appRouter = router({
 const server = createHTTPServer({
     router: appRouter,
     createContext(opts) { // 1> this works as middleware
-        let authHeader = opts.req.headers["authorization"];
-        console.log(authHeader)
+        // let authHeader = opts.req.headers["authorization"];
+        // console.log(authHeader)
         // jwt.verify()
         return {
             username: "123"
